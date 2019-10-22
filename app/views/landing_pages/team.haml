@@ -1,25 +1,28 @@
-#page-team.container-fluid.text-light
-  %h1.text-center Our Team
-  .row.text-center.justify-content-center
-    .col-sm-4
-      %img.img-responsive.center-block{:alt => "Img pam", :src => image_url('headshot-pam.png')}
-      %p.hero-sub-header Pam Hughes
-      %p.job-title OPERATIONS, CO-FOUNDER
-      %p.job-title Pam is a bona fide real estate veteran.  She brings deep industry expertise as an executive and an entrepreneur.  She has over 25 years of real estate experience spanning development, investment, advisory and transactions.  She co-founded Hughes Building Company in Greater Seattle before founding Property Investment Advisory in 2012.  Prior to being an entrepreneur, Pam held leadership positions within GE Capital where she was Chief Quality Officer at GE Financial Assurance.  Pam is a licensed RE broker and Principal Managing Broker, a certified Real Estate Investment Advisor, a Certified Negotiation Expert, and a six-sigma black belt (watch out).  She is active in the local community and enjoys travel and sailing the Mediterranean.
-    .col-sm-4
-      %img.img-responsive.center-block{:alt => "Img matt", :src => image_url('headshot-matt.png')}
-      %p.hero-sub-header Matt Holmes
-      %p.job-title CEO, CO-FOUNDER
-      %p.job-title Matt brings an international, millennial outlook to CoBuy.  A dual US/UK national, he spent 12 of the last 14 years in London where co-buying is most definitely a thing.  He received his BSc in Economics from University College London and his Masters in European Business from ESCP Europe.  He spent the next 8 years working in investment banking and financial markets, focusing on debt and interest rates.  Covering international institutional investors during the credit crisis, he honed customer relationship management skills and learned a lot about applied market theory. Since moving to Washington to co-found CoBuy, he has focused on local property markets.  He loves surfing new beaches and listening to 60s rock  roll.
+#page-team.page
+  = render 'components/navigation'
 
-  %hr
+  .content.text-light
+    %h1.text-center Our Team
+    .row.text-center.justify-content-center
+      .col-sm-4
+        %img.img-responsive.center-block{:alt => "Img pam", :src => image_url('headshot-pam.png')}
+        %p.hero-sub-header Pam Hughes
+        %p.job-title OPERATIONS, CO-FOUNDER
+        %p.job-title Pam is a bona fide real estate veteran.  She brings deep industry expertise as an executive and an entrepreneur.  She has over 25 years of real estate experience spanning development, investment, advisory and transactions.  She co-founded Hughes Building Company in Greater Seattle before founding Property Investment Advisory in 2012.  Prior to being an entrepreneur, Pam held leadership positions within GE Capital where she was Chief Quality Officer at GE Financial Assurance.  Pam is a licensed RE broker and Principal Managing Broker, a certified Real Estate Investment Advisor, a Certified Negotiation Expert, and a six-sigma black belt (watch out).  She is active in the local community and enjoys travel and sailing the Mediterranean.
+      .col-sm-4
+        %img.img-responsive.center-block{:alt => "Img matt", :src => image_url('headshot-matt.png')}
+        %p.hero-sub-header Matt Holmes
+        %p.job-title CEO, CO-FOUNDER
+        %p.job-title Matt brings an international, millennial outlook to CoBuy.  A dual US/UK national, he spent 12 of the last 14 years in London where co-buying is most definitely a thing.  He received his BSc in Economics from University College London and his Masters in European Business from ESCP Europe.  He spent the next 8 years working in investment banking and financial markets, focusing on debt and interest rates.  Covering international institutional investors during the credit crisis, he honed customer relationship management skills and learned a lot about applied market theory. Since moving to Washington to co-found CoBuy, he has focused on local property markets.  He loves surfing new beaches and listening to 60s rock  roll.
 
-  .container
-    %h2.text-center.pb-3
-      Our Story
-    .col-xs-10.col-xs-offset-1.hero-sub-header
-      %p CoBuy was founded in 2015 in Seattle with the goal of increasing access to and flexibility around home ownership.
-      %p
-        Folks decide to buy homes together for different reasons, but often times finances are a key driver. Ironically, back in 2015 we noticed there wasn't any affordable way to go about jointly purchasing a home. A do-it-yourself approach to co-buying
-        isn't straightforward, efficient, or particularly wise for a transaction of this nature. Real estate professionals and lawyers didn't seem to be the answer, either. Understandably, these professionals are generally focused on their role within the
-        process as opposed to facilitating the broader process. We created CoBuy to fill the gap and make it easier to co-buy a home.
+    %hr
+
+    .container
+      %h2.text-center.pb-3
+        Our Story
+      .col-xs-10.col-xs-offset-1.hero-sub-header
+        %p CoBuy was founded in 2015 in Seattle with the goal of increasing access to and flexibility around home ownership.
+        %p
+          Folks decide to buy homes together for different reasons, but often times finances are a key driver. Ironically, back in 2015 we noticed there wasn't any affordable way to go about jointly purchasing a home. A do-it-yourself approach to co-buying
+          isn't straightforward, efficient, or particularly wise for a transaction of this nature. Real estate professionals and lawyers didn't seem to be the answer, either. Understandably, these professionals are generally focused on their role within the
+          process as opposed to facilitating the broader process. We created CoBuy to fill the gap and make it easier to co-buy a home.

@@ -1,12 +1,9 @@
-#page-home {
-  nav {
-    background-color: #3899da;
-  }
-  
+#page-home {  
   .hero {
     background-image: url('../images/couch');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 450px;
   }
 }
