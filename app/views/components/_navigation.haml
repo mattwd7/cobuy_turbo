@@ -1,3 +1,14 @@
+:ruby
+  nav_items = [
+    { name: 'Home', href: '/' },
+    { name: 'Calculator', href: '/calculator' },
+    { name: 'About', href: '/about' },
+    { name: 'Team', href: '/team' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Login', href: '/login' }
+  ]
+
 #component-navigation
   %nav.navbar.navbar-expand-lg.navbar-dark
     %a.navbar-brand{href: "/"}
@@ -6,15 +17,6 @@
       %span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse
       %ul.navbar-nav.ml-auto
-        %li.nav-item
-          %a.nav-link{href: "#"} Calculator
-        %li.nav-item
-          %a.nav-link{href: "#"} About
-        %li.nav-item
-          %a.nav-link{href: "/team"} Team
-        %li.nav-item
-          %a.nav-link{href: "#"} Blog
-        %li.nav-item
-          %a.nav-link{href: "#"} FAQ
-        %li.nav-item
-          %a.nav-link{href: "#"} Login
+        - nav_items.each do |item|
+          %li.nav-item{class: current_page?(item[:href]) && 'active'}
+            %a.nav-link{href: item[:href]}= item[:name]
